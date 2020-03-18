@@ -1,0 +1,135 @@
+{
+  "link_sections": [
+    {
+      "header": "Utvikling",
+      "class": "development",
+      "href_class": "right link",
+      "title_class": "right name",
+      "links": [
+        {
+          "href": "https://projects.knowit.no/",
+          "href_title": "projects.knowit.no",
+          "title": "Atlassian Confluence (wiki)"
+        },
+        {
+          "href": "https://support.knowit.no/",
+          "href_title": "support.knowit.no",
+          "title": "Atlassian JIRA (tickets)"
+        },
+        {
+          "href": "https://kode.knowit.no/",
+          "href_title": "kode.knowit.no",
+          "title": "Atlassian Bitbucket (repos)"
+        },
+        {
+          "href": "https://byggmester.knowit.no/",
+          "href_title": "Atlassian Bamboo (build server)",
+          "title": "Atlassian JIRA (tickets)"
+        },
+        {
+          "href": "https://crowd.knowit.no/",
+          "href_title": "crowd.knowit.no",
+          "title": "Atlassian Crowd (user groups)"
+        },
+        {
+          "href": "https://nexus.knowit.no/",
+          "href_title": "nexus.knowit.no",
+          "title": "Nexus for NPM & Maven"
+        },
+        {
+          "href": "https://github.com/knowit/",
+          "href_title": "github.com/knowit",
+          "title": "Knowit's public GitHub repos"
+        }
+      ]
+    },
+    {
+      "header": "Administrasjon",
+      "class": "administration",
+      "href_class": "right link",
+      "title_class": "right name",
+      "links": [
+        {
+          "href": "http://epost.knowit.no/",
+          "href_title": "epost.knowit.no",
+          "title": "Epost"
+        },
+        {
+          "href": "http://kalender.knowit.no/",
+          "href_title": "kalender.knowit.no",
+          "title": "Kalender"
+        },
+        {
+          "href": "https://knowit.1password.eu",
+          "href_title": "knowit.1password.eu",
+          "title": "Passord"
+        },
+        {
+          "href": "https://knowitobjectnet.slack.com/",
+          "href_title": "Intern Slack",
+          "title": "knowitobjectnet.slack"
+        },
+        {
+          "href": "https://knowit.slack.com/signup",
+          "href_title": "knowit.slack.com",
+          "title": "Felles Slack"
+        },
+        {
+          "href": "https://timer.knowit.no/",
+          "href_title": "timer.knowit.no",
+          "title": "UBW timeføring"
+        },
+        {
+          "href": "http://kalender.knowit.no/",
+          "href_title": "kalender.knowit.no",
+          "title": "UBW utlegg"
+        },
+        {
+          "href": "http://plusstidvalg.knowit.no",
+          "href_title": "plusstidvalg.knowit.no",
+          "title": "Plusstidvalg"
+        },
+        {
+          "href": "https://knowit.cvpartner.com/",
+          "href_title": "knowit.cvpartner.com",
+          "title": "CV Partner"
+        },
+        {
+          "href": "http://sundtcommander.knowit.no/?transparent=false&zoom=-0.2",
+          "href_title": "sundtcommander.knowit.no/…",
+          "title": "Møterom i sanntid"
+        },
+        {
+          "href": "http://kalender.knowit.no/",
+          "href_title": "kalender.knowit.no",
+          "title": "PersonFinder"
+        },
+        {
+          "href": "https://knowit.sharepoint.com/",
+          "href_title": "sharepoint.knowit.no",
+          "title": "Sharepoint"
+        },
+        {
+          "href": "http://helpit.knowit.se/",
+          "href_title": "helpit.knowit.no",
+          "title": "HelpIt"
+        },
+        {
+          "href": "https://konferanse.knowit.no/",
+          "href_title": "konferanse.knowit.no",
+          "title": "Seminarer"
+        },
+        {
+          "href": "https://groups.google.com/a/knowit.no/forum/#!forumsearch/",
+          "href_title": "groups.google.com/a/knowit.no/...",
+          "title": "Epostlister"
+        },
+        {
+          "href": "https://prodess.no/",
+          "href_title": "prodess.no",
+          "title": "Firmahytter"
+        }
+      ]
+    }
+  ]
+}
