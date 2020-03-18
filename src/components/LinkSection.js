@@ -1,12 +1,12 @@
 import React from "react";
 import "../App.css";
-import * as Linkdata from "../objectnet.json";
 
 // const linkJsonStruct = Linkdata.link_sections;
-export function Links() {
+export function Links(props) {
+  const linkSections = props.link_sections;
   return (
     <div id="home">
-      {Linkdata.link_sections.map((section, i) => {
+      {linkSections.map((section, i) => {
         return (
           <section className={section.class} key={i}>
             <h1>{section.header}</h1>

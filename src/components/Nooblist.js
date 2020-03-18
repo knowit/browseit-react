@@ -4,6 +4,7 @@ import fry from "../img/fry.gif";
 import { TodoItem } from "./TodoItem";
 
 export function Nooblist(props) {
+  const checkboxSections = props.checkbox_sections;
   return (
     <section className="nooblist">
       <h2>
@@ -28,7 +29,7 @@ export function Nooblist(props) {
             om hva som kunne vært bedre til neste år
           </li>
         </ul>
-        <img src={fry} />
+        <img src={fry} alt="" />
       </div>
 
       <div id="noob_description">
@@ -59,7 +60,16 @@ export function Nooblist(props) {
       </div>
       <div>
         <form>
-            <TodoItem label="YEEBOYE"></TodoItem>
+          {checkboxSections.map(section => {
+            return (
+              <div>
+                <h3>{section.title}</h3>
+                {section.boxes.map(b => {
+                  return <TodoItem label={b.label} id={b.id}></TodoItem>;
+                })}
+              </div>
+            );
+          })}
         </form>
       </div>
     </section>

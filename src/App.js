@@ -4,7 +4,8 @@ import { Header } from "./components/Header";
 import { Links } from "./components/LinkSection";
 import { Footer } from "./components/MainFooter";
 import { Nooblist } from "./components/Nooblist";
-import expand from "./img/expand.png";
+import * as Linkdata from "./json/objectnet.json";
+
 
 function App() {
   return (
@@ -14,8 +15,8 @@ function App() {
           <Header></Header>
         </header>
         <div className="App">
-          <Links></Links>
-          <Nooblist></Nooblist>
+          <Links link_sections= {Linkdata.link_sections}></Links>
+          <Nooblist checkbox_sections = {Linkdata.checkbox_sections}></Nooblist>
         </div>
         <Footer></Footer>
       </main>

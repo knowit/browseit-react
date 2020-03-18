@@ -131,5 +131,20 @@
         }
       ]
     }
+  ],
+  "checkbox_sections": [
+    {
+      "title": "Personal",
+      "boxes": [
+        {
+          "id": "people_leaders",
+          "label": "Vet hvem mine ledere er (Prosjektleder, gruppeleder og avdelingsleder), og forskjellen på dem"
+        },
+        {
+          "id": "people_contract",
+          "label": "Har lest, forstått og signert ansettelseskontrakten (tar fort en time)"
+        }
+      ]
+    }
   ]
 }

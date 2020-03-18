@@ -13,14 +13,11 @@ const handleMinutes = () => {
 export function TodoItem(props) {
   const label = props.label;
   const id = props.id;
+  const timeId = props.id.concat("_time");
   const placeholder = props.placeholder ? props.placeholder : "0min";
   const styles = {
     input: {
       width: "3em"
-    },
-    checkbox: {
-      height: "1em",
-      width: "1em"
     }
   };
   return (
