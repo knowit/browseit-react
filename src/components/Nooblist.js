@@ -59,18 +59,18 @@ export function Nooblist(props) {
         estimatene vi har tatt helt feil på.
       </div>
       <div>
-        <form>
-          {checkboxSections.map(section => {
-            return (
-              <div>
-                <h3>{section.title}</h3>
-                {section.boxes.map(b => {
-                  return <TodoItem label={b.label} id={b.id}></TodoItem>;
-                })}
-              </div>
-            );
-          })}
-        </form>
+        {checkboxSections.map((section, i) => {
+          return (
+            <div key={i}>
+              <h3>{section.title}</h3>
+              {section.boxes.map((b, i) => {
+                return (
+                    <TodoItem key ={i} label={b.label} id={b.id}></TodoItem>
+                );
+              })}
+            </div>
+          );
+        })}
       </div>
     </section>
   );

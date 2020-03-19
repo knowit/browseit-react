@@ -9,7 +9,6 @@ import * as Linkdata from "./json/objectnet.json";
 
 function App() {
   return (
-    <body>
       <main>
         <header>
           <Header></Header>
@@ -20,7 +19,6 @@ function App() {
         </div>
         <Footer></Footer>
       </main>
-    </body>
   );
 }
 
