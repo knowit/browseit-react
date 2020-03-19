@@ -14,20 +14,22 @@ export function TodoItem(props) {
   const label = props.label;
   const id = props.id;
   const timeId = props.id.concat("_time");
-  const placeholder = props.placeholder ? props.placeholder : "0min";
   const styles = {
     input: {
-      width: "3em"
+      width: "4.5em"
     }
   };
   return (
     <div>
-      <input
-        type="text"
-        placeholder={placeholder}
-        style={styles.input}
-        onChange={handleMinutes}
-      ></input>
+      {props.placeholder && (
+        <input
+          type="text"
+          placeholder={props.placeholder}
+          style={styles.input}
+          onChange={handleMinutes}
+        ></input>
+      )}
+
       <input
         type="checkbox"
         style={styles.checkbox}
