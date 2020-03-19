@@ -1,68 +1,38 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# BrowseIt
 
-## Available Scripts
+BrowseIt gives you quick access and a good overview of the most frequently used sites internally in Knowit Objectnet. Additionally BrowseIt contains an introductory todolist, which both noobs and veterans will find useful. Try to check off everything in "the nooblist" to avoid forgetting something important.
 
-In the project directory, you can run:
+BrowseIt is an internal tool for employees in Knowit Objectnet AS, Norway. But *you're welcome to take a look* even if you don't work here.
 
-### `yarn start`
+**Install**
+- Install link: https://chrome.google.com/webstore/detail/browseit-for-knowit/hbmpfibpnmpenneffbojjkcehjpacedo
+- Install shortlink: https://bit.ly/welcome-to-knowit
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**Contact**
+- Primary contact: michael.johansen@knowit.no
+- Hangman contact: henrik.liodden@knowit.no, levi.sorum@knowit.no
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Legal
 
-### `yarn test`
+This software, as well as the concept, is not licensed for use anywhere outside of Knowit Objectnet. Consent may be given to modify and/or distribute the source code, but this consent will only be given explicitly and in writing, and only after receiving an emailed request detailing the intended usage. Contact michael.johansen@knowit.no if you want to use this source code or the concept.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Credits (newest first)
 
-### `yarn build`
+* Henrik Liodden and Levi Sørum made the awesome hangman game in 2019 (henrik.liodden@knowit.no, levi.sorum@knowit.no)
+* New recruits in 2019 provided a detailed PDF with change requests
+* All new recruits in 2016 provided great feedback
+* Lars Ivar Næss provided valuable feedback
+* Christer Kjellesvig came up with the idea of having "time estimate fields"
+* Sigmund Marius Nilssen provided valuable feedback
+* Michael Johansen is the lead developer (michael.johansen@knowit.no)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Suggestions for future features
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+* Stian Lågstad suggested that unchecked boxes should pop up to the top, like in Google Keep
+* Sigmund Marius Nilssen suggested that there should be a list of "who to ask about what"
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## History
 
-### `yarn eject`
+Version 2.0.0 included the awesome hangman game which lets employees play a game to learn each others names (match picture to name, hangman-style). The game was made by the new recruits Henrik Liodden and Levi Sørum.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+The initial release of BrowseIt was made by Michael Johansen in July 2016. The extension was made with "research time" in "Web Chapter", a knowledge sharing community in Knowit Objectnet. It was created because Michael needed to prepare a talk about *Chrome extensions*, and what better way to prepare than to just make a Chrome extension? The extension is used by practically all new recruits as an onboarding tool.
