@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 export function TodoItem(props) {
   const label = props.label;
@@ -10,19 +10,23 @@ export function TodoItem(props) {
     }
   };
 
-  const [checked, setChecked] = useState(localStorage.getItem(id));
+  const [checked, setChecked] = useState(
+    localStorage.getItem(id)
+  );
+  const [text, setText] = useState(
+    localStorage.getItem(timeId)
+  )
 
   const handleCheck = () => {
     let value = checked === "true" ? "false" : "true";
     localStorage.setItem(id, value);
     setChecked(value);
-    console.log("check");
   };
 
-  const handleMinutes = () => {
-    // do the thing. Set local storage id = prop.id and do what ever
-    console.log("CHANGING MINUTES TO ");
-  };
+  const handleText = event => {
+    localStorage.setItem(timeId, event.target.value)
+    setText(event.target.value)
+  }
 
   return (
     <div>
@@ -32,7 +36,8 @@ export function TodoItem(props) {
           id={timeId}
           placeholder={props.placeholder}
           style={styles.input}
-          onChange={handleMinutes}
+          value= {text ? text : ""}
+          onChange={handleText}
         ></input>
       )}
 
