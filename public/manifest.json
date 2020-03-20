@@ -25,8 +25,8 @@
   },
 
   "icons": {
-    "48" : "img/48.png",
-    "128" : "img/128.png"
+    "48" : "/48.png",
+    "128" : "/128.png"
   },
 
   "content_security_policy": "script-src 'self'; object-src 'self'"

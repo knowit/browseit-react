@@ -6,7 +6,7 @@ export function Footer() {
     return (
         <footer>
         <div id="expand">
-          <a id="expandLink" href="popup.html"><img id="expandMe" src={expand} alt="" /></a>
+          <a id="expandLink" href="index.html"><img id="expandMe" src={expand} alt="" /></a>
           <span id="alwaysExpand"><input data-nope="noCount" id="expandInput" name="expandInput" type="checkbox" />
           <label htmlFor="expandInput">Alltid stort vindu</label>
           </span>
