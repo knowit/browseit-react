@@ -6,6 +6,7 @@ import { Footer } from "./components/MainFooter";
 import { Nooblist } from "./components/Nooblist";
 import * as jsonRequest from "./json";
 import { CompanySelector } from "./components/CompanySelector";
+import { FloorMap } from "./components/FloorMap";
 
 const jsonFiles = Object.entries(jsonRequest).map(j => j[1]);
 
@@ -36,8 +37,8 @@ function App() {
   const [selectedJson, setSelectedJson] = useState({});
   const [totalBoxCount, setTotalBoxCount] = useState(0);
   const [checkedBoxesCount, setCheckedBoxesCount] = useState(0);
+  const [showMap, setShowMap] = useState(false);
 
- 
   const style = {
     placeholderText: {
       display: "flex",
@@ -50,9 +51,7 @@ function App() {
   return (
     <main>
       <header>
-        <Header />
-      </header>
-      <div className="App">
+        <Header showMap={showMap} setShowMap={setShowMap} />
         <CompanySelector
           jsonFiles={jsonFiles}
           selectedJson={selectedJson}
@@ -60,8 +59,12 @@ function App() {
           totalBoxCount={totalBoxCount}
           setTotalBoxCount={setTotalBoxCount}
           checkedBoxesCount={checkedBoxesCount}
-          setCheckedBoxesCount = {setCheckedBoxesCount}
+          setCheckedBoxesCount={setCheckedBoxesCount}
         />
+      </header>
+      {showMap && <FloorMap setShowMap={setShowMap} showMap={showMap} />}
+
+      <div className="App">
         {selectedJson.id ? (
           <div>
             <h2>{selectedJson.id}</h2>
@@ -73,9 +76,11 @@ function App() {
             />
           </div>
         ) : (
-          <span style={style.placeholderText}>
-            Select your Knowit company ⭜
-          </span>
+          !showMap && (
+            <span style={style.placeholderText}>
+              Select your Knowit company ⭜
+            </span>
+          )
         )}
       </div>
       <Footer
