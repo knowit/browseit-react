@@ -1,3 +1,5 @@
+/*global chrome*/
+
 import React from "react";
 import "../App.css";
 import expand from "../img/expand.png";
@@ -5,22 +7,26 @@ import expand from "../img/expand.png";
 export function Footer(props) {
   const total = props.totalBoxCount;
   const checked = props.checkedBoxesCount;
+  const resize = () => {
+    const href = "index.html";
+    window.open(href);
+  };
+
+  const style = {
+    tab: {
+      display: "flex",
+      alignItems: "center"
+    },
+    label: {
+      paddingLeft: "6px"
+    }
+  }
 
   return (
     <footer>
-      <div id="expand">
-        <a id="expandLink" href="index.html">
-          <img id="expandMe" src={expand} alt="" />
-        </a>
-        <span id="alwaysExpand">
-          <input
-            data-nope="noCount"
-            id="expandInput"
-            name="expandInput"
-            type="checkbox"
-          />
-          <label htmlFor="expandInput">Alltid stort vindu</label>
-        </span>
+      <div id="expand" style={style.tab}>
+          <img id="expandMe" src={expand} alt="" onClick={resize}/>
+          <label style={style.label}>åpne i ny fane</label>
       </div>
       <div id="feedback">
         Kildekode:{" "}
