@@ -33,39 +33,57 @@ console.log("");
 //#endregion
 
 function App() {
-  const [selectedJson, setSelectedJson] = useState({}); 
+  const [selectedJson, setSelectedJson] = useState({});
+  const [totalBoxCount, setTotalBoxCount] = useState(0);
+  const [checkedBoxesCount, setCheckedBoxesCount] = useState(0);
 
+ 
   const style = {
     placeholderText: {
       display: "flex",
       justifyContent: "center",
-      paddingTop:"2em",
-      fontSize:"3em",
-      color:"lightgray"
+      paddingTop: "2em",
+      fontSize: "3em",
+      color: "lightgray"
     }
-  }
+  };
   return (
     <main>
       <header>
-        <Header/>
+        <Header />
       </header>
       <div className="App">
         <CompanySelector
           jsonFiles={jsonFiles}
           selectedJson={selectedJson}
           setSelectedJson={setSelectedJson}
+          totalBoxCount={totalBoxCount}
+          setTotalBoxCount={setTotalBoxCount}
+          checkedBoxesCount={checkedBoxesCount}
+          setCheckedBoxesCount = {setCheckedBoxesCount}
         />
         {selectedJson.id ? (
           <div>
             <h2>{selectedJson.id}</h2>
-            <Links link_sections={selectedJson.link_sections}/>
-            <Nooblist checkbox_sections={selectedJson.checkbox_sections}/>
+            <Links link_sections={selectedJson.link_sections} />
+            <Nooblist
+              checkbox_sections={selectedJson.checkbox_sections}
+              checkedBoxesCount={checkedBoxesCount}
+              setCheckedBoxesCount={setCheckedBoxesCount}
+            />
           </div>
         ) : (
-          <span style={style.placeholderText}>Select your Knowit company ⭜</span>
+          <span style={style.placeholderText}>
+            Select your Knowit company ⭜
+          </span>
         )}
       </div>
-      <Footer/>
+      <Footer
+        totalBoxCount={totalBoxCount}
+        checkedBoxesCount={checkedBoxesCount}
+        selectedJson={selectedJson}
+        setCheckedBoxesCount={setCheckedBoxesCount}
+      />
     </main>
   );
 }

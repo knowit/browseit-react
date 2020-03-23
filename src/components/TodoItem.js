@@ -18,7 +18,13 @@ export function TodoItem(props) {
   )
 
   const handleCheck = () => {
+    let checkedCount = props.checkedBoxesCount;
     let value = checked === "true" ? "false" : "true";
+    if(value === "true") {
+      props.setCheckedBoxesCount(checkedCount + 1 )
+    }else{
+      props.setCheckedBoxesCount(checkedCount - 1)      
+    }
     localStorage.setItem(id, value);
     setChecked(value);
   };

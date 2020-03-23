@@ -65,7 +65,14 @@ export function Nooblist(props) {
               <h3>{section.id}</h3>
               {section.boxes.map((b, i) => {
                 return (
-                    <TodoItem key ={i} label={b.label} id={b.id} placeholder={b.placeholder} />
+                  <TodoItem
+                    key={i}
+                    label={b.label}
+                    id={b.id}
+                    placeholder={b.placeholder}
+                    checkedBoxesCount = {props.checkedBoxesCount}
+                    setCheckedBoxesCount={props.setCheckedBoxesCount}
+                  />
                 );
               })}
             </div>
