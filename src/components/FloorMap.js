@@ -5,6 +5,7 @@ export function FloorMap(props) {
   let visible = props.showMap;
   const style = {
     map: {
+        paddingTop: "1.5em",
       width: "100%",
       cursor: "pointer"
     }

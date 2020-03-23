@@ -62,12 +62,14 @@ function App() {
           setCheckedBoxesCount={setCheckedBoxesCount}
         />
       </header>
+      <span>
+        <h2>{selectedJson.id}</h2>
+      </span>
       {showMap && <FloorMap setShowMap={setShowMap} showMap={showMap} />}
 
       <div className="App">
         {selectedJson.id ? (
           <div>
-            <h2>{selectedJson.id}</h2>
             <Links link_sections={selectedJson.link_sections} />
             <Nooblist
               checkbox_sections={selectedJson.checkbox_sections}
