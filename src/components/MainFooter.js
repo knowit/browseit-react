@@ -18,13 +18,13 @@ export function Footer(props) {
     label: {
       paddingLeft: "6px"
     }
-  }
+  };
 
   return (
     <footer>
       <div id="expand" style={style.tab}>
-          <img id="expandMe" src={expand} alt="" onClick={resize}/>
-          <label style={style.label}>åpne i ny fane</label>
+        <img id="expandMe" src={expand} alt="" onClick={resize} />
+        <label style={style.label}>åpne i ny fane</label>
       </div>
       <div id="feedback">
         Kildekode:{" "}
@@ -39,13 +39,11 @@ export function Footer(props) {
           michael.johansen@knowit.no
         </a>
       </div>
-      {total === 0 ? (
-        <div id="counter"></div>
-      ) : (
+      {
         <div id="counter">
           {checked}/{total}
         </div>
-      )}
+      }
     </footer>
   );
 }

@@ -8,7 +8,12 @@ import * as jsonRequest from "./json";
 import { CompanySelector } from "./components/CompanySelector";
 import { FloorMap } from "./components/FloorMap";
 
+// Ugly stuff to be able to select json file from dropdown.
 const jsonFiles = Object.entries(jsonRequest).map(j => j[1]);
+const defaultSelected = localStorage.getItem("selectedCompany");
+const defaultSelectedJson = defaultSelected ? jsonFiles.filter(j => j.id === defaultSelected)[0] : {};
+const boxes = defaultSelectedJson.checkbox_sections.map(s => s.boxes.map(b => b.id)).flat();
+const checkedBoxes = boxes.filter(b => localStorage.getItem(b) === "true");
 
 // some console stuff for devs...
 //#region
@@ -34,16 +39,12 @@ console.log("");
 //#endregion
 
 function App() {
-  let defaultSelected = localStorage.getItem("selectedCompany");
-
-  const [selectedJson, setSelectedJson] = useState(
-    defaultSelected ? jsonFiles.filter(j => j.id === defaultSelected)[0] : {}
+  const [selectedJson, setSelectedJson] = useState(defaultSelectedJson);
+  const [totalBoxCount, setTotalBoxCount] = useState(boxes.length);
+  const [checkedBoxesCount, setCheckedBoxesCount] = useState(
+    checkedBoxes.length
   );
-  const [totalBoxCount, setTotalBoxCount] = useState(0);
-  const [checkedBoxesCount, setCheckedBoxesCount] = useState(0);
   const [showMap, setShowMap] = useState(false);
-
-  // setSelectedJson(jsonFiles.filter(j => j.id === defaultSelected)[0]);
 
   const style = {
     placeholderText: {
@@ -93,8 +94,8 @@ function App() {
       </div>
       <Footer
         totalBoxCount={totalBoxCount}
-        checkedBoxesCount={checkedBoxesCount}
         selectedJson={selectedJson}
+        checkedBoxesCount={checkedBoxesCount}
         setCheckedBoxesCount={setCheckedBoxesCount}
       />
     </main>

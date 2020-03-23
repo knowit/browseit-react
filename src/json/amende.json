@@ -869,6 +869,10 @@
         {
           "id": "tough_confidant",
           "label": "Jeg vet at jeg alltid kan prate med de personalansvarlige (gruppeledere og avdelingsledere) om hva som helst for de har taushetsplikt, og at jeg kan velge fritt hvem av dem jeg vil prate med vanskelige ting om"
+        },
+        {
+          "id": "tough_test",
+          "label": "testen ja!"
         }
       ]
     }
