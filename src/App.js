@@ -34,10 +34,16 @@ console.log("");
 //#endregion
 
 function App() {
-  const [selectedJson, setSelectedJson] = useState({});
+  let defaultSelected = localStorage.getItem("selectedCompany");
+
+  const [selectedJson, setSelectedJson] = useState(
+    defaultSelected ? jsonFiles.filter(j => j.id === defaultSelected)[0] : {}
+  );
   const [totalBoxCount, setTotalBoxCount] = useState(0);
   const [checkedBoxesCount, setCheckedBoxesCount] = useState(0);
   const [showMap, setShowMap] = useState(false);
+
+  // setSelectedJson(jsonFiles.filter(j => j.id === defaultSelected)[0]);
 
   const style = {
     placeholderText: {

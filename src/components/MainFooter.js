@@ -1,5 +1,3 @@
-/*global chrome*/
-
 import React from "react";
 import "../App.css";
 import expand from "../img/expand.png";
