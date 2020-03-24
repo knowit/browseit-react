@@ -10,29 +10,25 @@ export function TodoItem(props) {
     }
   };
 
-  const [checked, setChecked] = useState(
-    localStorage.getItem(id)
-  );
-  const [text, setText] = useState(
-    localStorage.getItem(timeId)
-  )
+  const [checked, setChecked] = useState(localStorage.getItem(id));
+  const [text, setText] = useState(localStorage.getItem(timeId));
 
   const handleCheck = () => {
     let checkedCount = props.checkedBoxesCount;
     let value = checked === "true" ? "false" : "true";
-    if(value === "true") {
-      props.setCheckedBoxesCount(checkedCount + 1 )
-    }else{
-      props.setCheckedBoxesCount(checkedCount - 1)      
+    if (value === "true") {
+      props.setCheckedBoxesCount(checkedCount + 1);
+    } else {
+      props.setCheckedBoxesCount(checkedCount - 1);
     }
     localStorage.setItem(id, value);
     setChecked(value);
   };
 
   const handleText = event => {
-    localStorage.setItem(timeId, event.target.value)
-    setText(event.target.value)
-  }
+    localStorage.setItem(timeId, event.target.value);
+    setText(event.target.value);
+  };
 
   return (
     <div>
@@ -42,7 +38,7 @@ export function TodoItem(props) {
           id={timeId}
           placeholder={props.placeholder}
           style={styles.input}
-          value= {text ? text : ""}
+          value={text ? text : ""}
           onChange={handleText}
         ></input>
       )}
@@ -54,7 +50,8 @@ export function TodoItem(props) {
         onChange={handleCheck}
         checked={checked === "true" ? true : false}
       ></input>
-      <label>{label}</label>
+      <label>{label} {props.href && <a href={props.href}>(link)</a>}</label>
+      
     </div>
   );
 }

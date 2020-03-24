@@ -70,7 +70,8 @@ export function Nooblist(props) {
                     label={b.label}
                     id={b.id}
                     placeholder={b.placeholder}
-                    checkedBoxesCount = {props.checkedBoxesCount}
+                    href={b.href}
+                    checkedBoxesCount={props.checkedBoxesCount}
                     setCheckedBoxesCount={props.setCheckedBoxesCount}
                   />
                 );

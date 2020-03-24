@@ -81,8 +81,8 @@
           "title": "UBW timeføring"
         },
         {
-          "href": "http://kalender.knowit.no/",
-          "href_title": "kalender.knowit.no",
+          "href": "https://knowit.unit4cloud.no/",
+          "href_title": "knowit.unit4cloud.no/",
           "title": "UBW utlegg"
         },
         {
@@ -101,8 +101,8 @@
           "title": "Møterom i sanntid"
         },
         {
-          "href": "http://kalender.knowit.no/",
-          "href_title": "kalender.knowit.no",
+          "href": "https://personfinder.knowit.no/",
+          "href_title": "persnfinder.knowit.no",
           "title": "PersonFinder"
         },
         {
@@ -160,7 +160,8 @@
         {
           "id": "people_handbook",
           "label": "Har lest høvelig gjennom personalHåndboka (tar fort en time)",
-          "placeholder": "60min"
+          "placeholder": "60min",
+          "href": "https://projects.knowit.no/pages/viewpage.action?pageId=30998775"
         },
         {
           "id": "people_project",
@@ -175,7 +176,8 @@
         {
           "id": "people_whistleblower",
           "label": "Vet om varslingstjenesten som kan brukes til å melde fra om uakseptabel atferd (f.eks: trakassering / rasisme)",
-          "placeholder": "0min"
+          "placeholder": "0min",
+          "href": "https://projects.knowit.no/pages/viewpage.action?spaceKey=OO&title=Varslingstjeneste"
         },
         {
           "id": "people_development",
@@ -210,12 +212,14 @@
         {
           "id": "communication_slack",
           "label": "Har kommet meg på Slack, og lagt til kanalene jeg vil ha",
-          "placeholder": "15min"
+          "placeholder": "15min",
+          "href": "https://knowitobjectnet.slack.com/"
         },
         {
           "id": "communication_mailinglists",
           "label": "Har meldt meg på epostlistene som jeg ønsker å være på",
-          "placeholder": "15min"
+          "placeholder": "15min",
+          "href": "https://groups.google.com/a/knowit.no/forum/#!forumsearch/"
         },
         {
           "id": "communication_archive",
@@ -225,32 +229,38 @@
         {
           "id": "communication_companycalendar",
           "label": "Har lagt til felleskalenderen",
-          "placeholder": "10min"
+          "placeholder": "10min",
+          "href": "https://projects.knowit.no/display/DRIFT/Legge+til+kalendere"
         },
         {
           "id": "communication_vacationcalendar",
           "label": "Har lagt til feriekalenderen, og lover å legge inn feriedagene mine",
-          "placeholder": "10min"
+          "placeholder": "10min",
+          "href": "https://projects.knowit.no/display/DRIFT/Legge+til+kalendere"
         },
         {
           "id": "communication_sciencecalendar",
           "label": "Har lagt til fagkalenderen, og skal bli med på fagarrangementer",
-          "placeholder": "10min"
+          "placeholder": "10min",
+          "href": "https://projects.knowit.no/display/DRIFT/Legge+til+kalendere"
         },
         {
           "id": "communication_eventcalendar",
           "label": "Har lagt til eventkalenderen, og skal bli med på fest",
-          "placeholder": "10min"
+          "placeholder": "10min",
+          "href": "https://projects.knowit.no/display/DRIFT/Legge+til+kalendere"
         },
         {
           "id": "communication_meetingcalendars",
           "label": "Har lagt til møteromskalenderne, og vet hvordan jeg skrur dem av når jeg ikke trenger dem",
-          "placeholder": "10min"
+          "placeholder": "10min",
+          "href": "https://projects.knowit.no/display/DRIFT/Legge+til+kalendere"
         },
         {
           "id": "communication_confluence",
           "label": "Abonnerer på daglige oppdateringer fra Confluence for å få oversikt over Knowit (fint som ny, skru av etterhvert)",
-          "placeholder": "10min"
+          "placeholder": "10min",
+          "href": "https://projects.knowit.no/users/editmyemailsettings.action"
         }
       ]
     },
@@ -315,27 +325,32 @@
         {
           "id": "offices_landlord",
           "label": "Har utforsket Entra sin app (finnes også på iOS/Android) og sett hva slags tjenester de tilbyr oss (t.o.m. renseri)",
-          "placeholder": "10min"
+          "placeholder": "10min",
+          "href": "https://app.entra.no/nb/9/"
         },
         {
           "id": "offices_auditorium",
           "label": "Vet at det er gratis å booke auditorium/møterom i 1. etasje via Entra sin møteromsbooking",
-          "placeholder": "5min"
+          "placeholder": "5min",
+          "href": "https://cgn.pronestor.com/3392-entra-sundtkvartalet/"
         },
         {
           "id": "offices_meeting_food",
           "label": "Vet at det også er mulig, men ikke gratis, å booke møtemat via Entra sin møteromsbooking",
-          "placeholder": "5min"
+          "placeholder": "5min",
+          "href": "https://cgn.pronestor.com/3392-entra-sundtkvartalet/"
         },
         {
           "id": "offices_firetraining",
           "label": "Har tatt det obligatoriske brannkurset for Sundtkvartalet, finn link og kurskode på mottak av nyansatte-siden",
-          "placeholder": "60min"
+          "placeholder": "60min",
+          "href": "https://projects.knowit.no/display/OO/Mottak+av+nyansatte"
         },
         {
           "id": "offices_feedback",
           "label": "Vet at forslag kan sendes til sundt@knowit.no med subject Ønske/Idé/Feil/Spørsmål",
-          "placeholder": "0min"
+          "placeholder": "0min",
+          "href": "sundt@knowit.no"
         }
       ]
     },
@@ -350,7 +365,8 @@
         {
           "id": "headshots_gallery",
           "label": "Vet hvor jeg finner profilbilder for hele Knowit Norge",
-          "placeholder": "0min"
+          "placeholder": "0min",
+          "href": "https://knowit.sharepoint.com/teams/profilbilder/sitepages/home.aspx"
         },
         {
           "id": "headshots_accesscard",
@@ -390,7 +406,8 @@
         {
           "id": "headshots_employees",
           "label": "Lagt inn profilbildet på Ansatte-siden (deretter velg bildet og bruk 100px bredde)",
-          "placeholder": "5min"
+          "placeholder": "5min",
+          "href": "https://projects.knowit.no/display/OO/Ansatte"
         }
       ]
     },
@@ -410,7 +427,8 @@
         {
           "id": "economy_simfamily",
           "label": "Vet at familie kan få et telefonabonnement med mye data til lav pris via jobben",
-          "placeholder": "0min"
+          "placeholder": "0min",
+          "href": "https://projects.knowit.no/display/OO/Telenor-mobilabonnement+for+familie"
         },
         {
           "id": "economy_ticket",
@@ -430,17 +448,20 @@
         {
           "id": "economy_accounts",
           "label": "Har sett over listen over bedriftskonti og bedriftsavtalene nederst på siden («Gratis FastTrack? Ooh, nice.»)",
-          "placeholder": "10min"
+          "placeholder": "10min",
+          "href": "https://projects.knowit.no/display/UC/Bedriftskonti"
         },
         {
           "id": "economy_travelexpenses",
           "label": "Har brukt utleggregningssystemet for første gang (merk: ikke single sign-on, har eget passord)",
-          "placeholder": "20min"
+          "placeholder": "20min",
+          "href": "https://knowit.unit4cloud.no/"
         },
         {
           "id": "economy_faq",
           "label": "Vet hvor jeg finner info om timeføring og utleggregningssystemet",
-          "placeholder": "5min"
+          "placeholder": "5min",
+          "href": "https://projects.knowit.no/pages/viewpage.action?pageId=1541230"
         },
         {
           "id": "economy_overtimefood",
@@ -475,7 +496,8 @@
         {
           "id": "economy_blooddonation",
           "label": "Har sjekket om jeg kan bli blodgiver, slik at jeg kan heve lønn samtidig som jeg redder noens liv og får en Mummi-kopp (se Personalhåndbok, kap. 7.3.2).",
-          "placeholder": "2min"
+          "placeholder": "2min",
+          "href": "https://www.rodekors.no/gi-blod/a-gi-blod/"
         }
       ]
     },
@@ -515,12 +537,14 @@
         {
           "id": "hours_faq",
           "label": "Vet at mange typiskse timeføringsspørsmål står i UBW FAQen vår",
-          "placeholder": "10min"
+          "placeholder": "10min",
+          "href": "https://projects.knowit.no/pages/viewpage.action?pageId=82477132"
         },
         {
           "id": "hours_plustimechoice",
           "label": "Vet at jeg kan endre om plusstimer utbetales eller ikke på plusstidvalg.knowit.no",
-          "placeholder": "10min"
+          "placeholder": "10min",
+          "href": "https://plusstidvalg.knowit.no/"
         }
       ]
     },
@@ -535,17 +559,20 @@
         {
           "id": "science_news",
           "label": "Jeg leser Hacker News daglig",
-          "placeholder": "0min"
+          "placeholder": "0min",
+          "href": "https://news.ycombinator.com/"
         },
         {
           "id": "science_wiki",
           "label": "Har sett på listen over aktive faggrupper / fagområder på wikien",
-          "placeholder": "25min"
+          "placeholder": "25min",
+          "href": "https://projects.knowit.no/display/FAG/Faggrupper"
         },
         {
           "id": "science_groups",
           "label": "Har meldt meg inn i, eller startet, en faggruppe / et fagområde (ledere får mer fagtimer)",
-          "placeholder": "15min"
+          "placeholder": "15min",
+          "href": "https://projects.knowit.no/pages/viewpage.action?pageId=22682668"
         },
         {
           "id": "science_hours",
@@ -555,7 +582,8 @@
         {
           "id": "science_reward",
           "label": "Har lest om belønningsmodellen for foredrag",
-          "placeholder": "10min"
+          "placeholder": "10min",
+          "href": "https://projects.knowit.no/pages/viewpage.action?pageId=19335580"
         },
         {
           "id": "science_seminar",
@@ -565,7 +593,8 @@
         {
           "id": "science_conference",
           "label": "Har meldt meg på min første konferanse (tar fort en time)",
-          "placeholder": "60min"
+          "placeholder": "60min",
+          "href": "https://projects.knowit.no/display/FAG/Kurs+og+konferanser"
         }
       ]
     },
@@ -610,17 +639,20 @@
         {
           "id": "sales_login",
           "label": "Får logget inn i CV Partner, ellers mailer jeg Per Christian Øren",
-          "placeholder": "10min"
+          "placeholder": "10min",
+          "href": "perore@knowit.no"
         },
         {
           "id": "sales_master",
           "label": "Har laget master-CV i CV Partner på norsk (tar fort en dag)",
-          "placeholder": "8timer"
+          "placeholder": "8timer",
+          "href": "https://knowit.cvpartner.com/"
         },
         {
           "id": "sales_employeelist",
           "label": "Har lagt inn meg selv på ansattsiden på wikien",
-          "placeholder": "15in"
+          "placeholder": "15in",
+          "href": "https://projects.knowit.no/display/OO/Ansatte"
         }
       ]
     },
@@ -640,7 +672,8 @@
         {
           "id": "recruiting_bonus",
           "label": "Har lest om rekrutteringsbonusen vår",
-          "placeholder": "10min"
+          "placeholder": "10min",
+          "href": "https://projects.knowit.no/pages/viewpage.action?pageId=61052573"
         }
       ]
     },
@@ -650,17 +683,20 @@
         {
           "id": "profile_brandbook",
           "label": " Har sett Knowit sin Brandbook og vet at jeg skal hente logoer osv. derfra",
-          "placeholder": "10min"
+          "placeholder": "10min",
+          "href": "https://knowit.se/brandbook/"
         },
         {
           "id": "profile_templates",
           "label": "Har sett Knowit sine presentasjons- og dokumentmaler og vet at jeg skal bruke den for 'Knowit Solutions'",
-          "placeholder": "15min"
+          "placeholder": "15min",
+          "href": "https://knowit.sharepoint.com/sites/groupcommon/templates/SitePages/Home.aspx"
         },
         {
           "id": "profile_bizcard",
           "label": "Hvis jeg vil så har jeg skaffet visittkort, else void",
-          "placeholder": "20min"
+          "placeholder": "20min",
+          "href": "https://knowit.sharepoint.com/sites/groupcommon/templates/Word/Forms/AllItems.aspx"
         },
         {
           "id": "profile_ask",
@@ -685,7 +721,8 @@
         {
           "id": "hwsw_applecare",
           "label": "Har registrert AppleCare eller tilsvarende (husk at forbrukerlov ikke gjelder for bedrifter)",
-          "placeholder": "15min"
+          "placeholder": "15min",
+          "href": "https://checkcoverage.apple.com/no/no/"
         },
         {
           "id": "hwsw_setup",
@@ -705,7 +742,8 @@
         {
           "id": "hwsw_printer",
           "label": "Har satt opp printeren med guiden på wikien",
-          "placeholder": "10min"
+          "placeholder": "10min",
+          "href": "https://projects.knowit.no/display/DRIFT/Oppsett+av+skriver+%28printer%29+i+Sundtkvartalet"
         },
         {
           "id": "hwsw_office",
@@ -750,7 +788,8 @@
         {
           "id": "develop_support",
           "label": "Vet at jeg kan ta kontakt med Drift på #drift, drift@knowit.no, eller lage en JIRA til Drift",
-          "placeholder": "5min"
+          "placeholder": "5min",
+          "href": "drift@knowit.no"
         }
       ]
     },
@@ -775,17 +814,20 @@
         {
           "id": "security_2fa",
           "label": "Har satt 2-faktor på konsernkontoen via Active Directory → Profile → 'Additional security verification'",
-          "placeholder": "bootcamp"
+          "placeholder": "bootcamp",
+          "href": "https://account.activedirectory.windowsazure.com/"
         },
         {
           "id": "security_pwmanager",
           "label": "Har tatt i bruk Knowits 1Password, og skal aldri legge inn mine private passord der",
-          "placeholder": "bootcamp"
+          "placeholder": "bootcamp",
+          "href": "https://projects.knowit.no/display/DRIFT/1Password"
         },
         {
           "id": "security_getpwmanager",
           "label": "Om jeg ikke har fått 1Password automatisk så mailer jeg on-passwords@knowit.no og ber om konto",
-          "placeholder": "bootcamp"
+          "placeholder": "bootcamp",
+          "href": "on-passwords@knowit.no"
         },
         {
           "id": "security_linkprivate",
@@ -871,8 +913,8 @@
           "label": "Jeg vet at jeg alltid kan prate med de personalansvarlige (gruppeledere og avdelingsledere) om hva som helst for de har taushetsplikt, og at jeg kan velge fritt hvem av dem jeg vil prate med vanskelige ting om"
         },
         {
-          "id": "tough_test",
-          "label": "testen ja!"
+          "id": "test",
+          "label": "test"
         }
       ]
     }
